@@ -159,7 +159,51 @@ h3 {
 /* ==========================
 **NAVBAR**
 ========================== */
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 30px 28px 30px;
+	background-color: #202020;
+}
+.left-side {
+	display: flex;
+	flex: 1;
+	max-width: 30%;
+	justify-content: space-between;
+}
+nav > .left-side > div {
+	/* margin-right: 20px; */
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+	color: #dadada;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+.nav-link-wrapper:hover {
+	border-bottom: 2px solid #ffffff;
+}
+.nav-link-wrapper a:hover {
+	color: #ffffff;
+}
+.active-nav-link {
+	border-bottom: 2px solid #ffffff;
+}
+.active-nav-link a {
+	color: #ffffff !important;
+}
 
+.right-side > .myNameDisplay > div {
+	color: #dadada;
+	font-size: 1em;
+	text-transform: uppercase;
+}
 /* ==========================
 **MAIN**
 ========================== */
