@@ -137,7 +137,25 @@ table {
 /* ==========================
 **BODY**
 ========================== */
+body {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+}
 
+h1 {
+	font-size: 3em;
+	text-align: center;
+	font-weight: 400;
+}
+h2 {
+	font-size: 2.5em;
+	text-align: center;
+	font-weight: 400;
+}
+h3 {
+	font-size: 2em;
+	text-align: center;
+}
 /* ==========================
 **NAVBAR**
 ========================== */
