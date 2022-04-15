@@ -1,6 +1,6 @@
-/* ==========================
-**CSS RESET**
-========================== */
+/* ========================== */
+/*        *CSS RESET*         */
+/* ========================== */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -134,9 +134,11 @@ table {
 	border-spacing: 0;
 }
 
-/* ==========================
-**BODY**
-========================== */
+/* ========================== */
+/*  *ALL SIZES AND 1201PX++*  */
+/* ========================== */
+
+/* GENERAL */
 body {
 	font-family: "Ubuntu", sans-serif;
 	font-weight: 300;
@@ -156,23 +158,21 @@ h3 {
 	font-size: 2em;
 	text-align: center;
 }
-/* ==========================
-**NAVBAR**
-========================== */
+
+/* NAVBAR */
 nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 50px 30px 28px 30px;
+	padding: 30px;
 	background-color: #202020;
 }
 .left-side {
 	display: flex;
 	flex: 1;
-	max-width: 30%;
+	max-width: 20%;
 	justify-content: space-between;
 }
 nav > .left-side > div {
-	/* margin-right: 20px; */
 	font-size: 1em;
 	text-transform: uppercase;
 }
@@ -204,10 +204,69 @@ nav > .left-side > div {
 	font-size: 1em;
 	text-transform: uppercase;
 }
-/* ==========================
-**MAIN**
-========================== */
+/* MAIN */
 
-/* ==========================
-**FOOTER**
-========================== */
+/* FOOTER */
+
+/* ========================== */
+/*       *OTHER SIZES*        */
+/* ========================== */
+@media (max-width: 1200px) {
+	h1 {
+		color: orange;
+	}
+	.left-side {
+		max-width: 27%;
+	}
+}
+
+@media (max-width: 992px) {
+	h1 {
+		color: yellow;
+	}
+	.left-side {
+		max-width: 33%;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		color: green;
+	}
+	.left-side {
+		max-width: 40%;
+	}
+}
+
+@media (max-width: 576px) {
+	h1 {
+		color: blue;
+	}
+	nav {
+		flex-direction: row;
+		align-items: center;
+	}
+	.left-side {
+		flex-direction: column;
+		align-items: left;
+	}
+	.nav-link-wrapper {
+		height: 1.1em;
+		border-bottom: none;
+		border-left: 2px solid transparent;
+		transition: border-left 0.5s;
+		padding-left: 7px;
+		/* margin-bottom: 3px; */
+	}
+	.nav-link-wrapper:hover {
+		border-left: 2px solid #ffffff;
+		border-bottom: none;
+	}
+	.active-nav-link {
+		border-left: 2px solid #ffffff;
+		border-bottom: none;
+	}
+	nav > .left-side > div {
+		font-size: 0.9em;
+	}
+}
