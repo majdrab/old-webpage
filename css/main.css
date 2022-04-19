@@ -158,17 +158,20 @@ body {
 
 h1 {
 	font-size: 3em;
-	text-align: center;
 	font-weight: 400;
+	text-align: center;
+	margin-bottom: 0.5em;
 }
 h2 {
 	font-size: 2.5em;
-	text-align: center;
 	font-weight: 400;
+	text-align: center;
+	margin-bottom: 0.4em;
 }
 h3 {
 	font-size: 2em;
 	text-align: center;
+	margin-bottom: 0.3em;
 }
 
 /* NAVBAR */
@@ -191,7 +194,7 @@ nav > .nav-left > div {
 	text-transform: uppercase;
 }
 .nav-link-wrapper {
-	height: 22px;
+	height: 1.5em;
 	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.5s;
 }
@@ -219,24 +222,30 @@ nav > .nav-left > div {
 }
 /* MAIN */
 main {
-	width: 90%;
-	margin: 3em;
+	width: 70%;
+	margin: 3em auto;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	text-align: justify;
 }
-main section {
-	max-width: 100%;
-	margin: 0 auto;
-}
+/* main > section {
+	margin: 0em auto;
+} */
 
 /* FOOTER */
 footer {
 	margin-top: auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 30px;
+	padding: 1.5em;
 	background-color: #202020;
+}
+.foot-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 3em;
 }
 .foot-link-wrapper a {
 	color: #dadada;
@@ -248,6 +257,7 @@ footer {
 .foot-right > div {
 	color: #dadada;
 	font-size: 1em;
+	text-align: right;
 }
 
 /* ========================== */
@@ -276,12 +286,29 @@ footer {
 	.nav-left {
 		max-width: 33%;
 	}
+
+	/* MAIN */
+	main {
+		width: 80%;
+		margin: 2em auto;
+	}
 }
 
 @media (max-width: 768px) {
 	/* GENERAL */
 	h1 {
 		color: green;
+	}
+	h1 {
+		font-size: 2.5em;
+		font-weight: 400;
+	}
+	h2 {
+		font-size: 2em;
+		font-weight: 300;
+	}
+	h3 {
+		font-size: 1.5em;
 	}
 
 	/* NAVBAR */
@@ -294,6 +321,17 @@ footer {
 	/* GENERAL */
 	h1 {
 		color: blue;
+	}
+	h1 {
+		font-size: 2em;
+		font-weight: 300;
+	}
+	h2 {
+		font-size: 1.6em;
+		font-weight: 300;
+	}
+	h3 {
+		font-size: 1.2em;
 	}
 
 	/* NAVBAR */
@@ -323,5 +361,11 @@ footer {
 	}
 	nav > .nav-left > div {
 		font-size: 0.9em;
+	}
+
+	/* MAIN */
+	main {
+		width: 90%;
+		margin: 1em auto;
 	}
 }
