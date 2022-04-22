@@ -409,6 +409,15 @@ viewBox="0 0 371 297" */
 .about .about-section-wrapper .about-basic-wrapper p {
 	font-size: 1.5rem;
 	text-align: left;
+	color: #202020;
+}
+.about .about-section-wrapper .about-background {
+	background-color: #202020;
+	min-width: 100vw;
+	padding: 1rem;
+}
+.about .about-section-wrapper .about-background p {
+	color: #dadada;
 }
 .about .about-section-wrapper .about-cont-wrapper {
 }
