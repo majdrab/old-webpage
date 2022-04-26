@@ -410,6 +410,21 @@ main {
 	text-align: left;
 	color: #202020;
 }
+#cv-link {
+	border-bottom: 2px solid #202020;
+	height: 1.5em;
+	transition: border-bottom 0.5s;
+}
+#cv-link:hover {
+	border-bottom: 2px solid #202020c2;
+}
+#cv-link p {
+	color: #202020;
+	transition: color 0.5s;
+}
+#cv-link:hover p {
+	color: #202020c2;
+}
 .about .about-section-wrapper .about-basic-wrapper .contacts,
 .project .about-section-wrapper .about-basic-wrapper .contacts {
 	width: 100%;
@@ -421,6 +436,12 @@ main {
 .fa-brands {
 	font-size: 3rem;
 	color: #202020;
+	transition: color 0.5s;
+}
+.fa-facebook:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
+	color: #202020c2;
 }
 .about .about-title {
 	color: #202020;
@@ -675,9 +696,10 @@ footer {
 		width: 100%;
 		display: flex;
 	}
-	#me-2-img {
-		display: none;
+	.about .about-section-wrapper .about-basic-wrapper img {
+		margin-bottom: 2em;
 	}
+
 	/* main-projects */
 	iframe {
 		aspect-ratio: 9/16;
