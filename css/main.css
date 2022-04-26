@@ -247,7 +247,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* min-height: 350px; */
+	min-height: 350px;
 	padding-right: 2rem;
 	border-right: 4px solid transparent;
 	animation: index-border-1 1s ease forwards 3.8s;
@@ -349,7 +349,7 @@ main {
 	}
 }
 .index .index-item-wrapper .index-right {
-	/* min-height: 298px; */
+	min-height: 298px;
 	max-height: 298px;
 	padding-left: 2rem;
 	font-size: 2.5rem;
@@ -495,20 +495,24 @@ iframe {
 	color: #dadada;
 	text-shadow: none;
 }
-#back-button {
+#back-button,
+#project-link {
 	background-color: #202020;
 	border-radius: 1em;
 	padding: 0.6em;
 	transition: background-color 0.5s;
 }
-#back-button:hover {
+#back-button:hover,
+#project-link:hover {
 	background-color: #202020c2;
 }
-#back-button p {
+#back-button p,
+#project-link p {
 	color: #dadada;
 	transition: color 0.5s;
 }
-#back-button:hover p {
+#back-button:hover p,
+#project-link:hover p {
 	color: #ffffff;
 }
 
