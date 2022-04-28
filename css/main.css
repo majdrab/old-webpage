@@ -451,12 +451,12 @@ main {
 	border-bottom: 2px solid #202020;
 }
 .about .certificates-grid {
-	display: flex;
-	/* display: grid;
+	/* display: flex; */
+	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(450px, 450px));
 	grid-auto-rows: auto;
-	gap: 1.5rem; */
-	/* place-items: center; */
+	gap: 1.5rem;
+	place-items: center;
 	justify-content: center;
 	align-items: center;
 	/* border: 2px solid red; */
