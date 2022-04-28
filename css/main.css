@@ -651,7 +651,7 @@ footer {
 		}
 	}
 	.index .index-item-wrapper .index-right {
-		/* min-height: auto; */
+		min-height: auto;
 		max-height: auto;
 		/* min-width: 333.9px; */
 		max-width: 333.9px;
