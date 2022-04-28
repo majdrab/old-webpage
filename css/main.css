@@ -454,7 +454,8 @@ main {
 	/* display: flex; */
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(450px, 450px));
-	grid-auto-rows: auto;
+	grid-auto-rows: auto !important; /* mozilla doesnt accept this */
+	grid-auto-rows: 450px;
 	gap: 1.5rem;
 	place-items: center;
 	justify-content: center;
@@ -640,7 +641,7 @@ footer {
 	.index .index-item-wrapper .index-left {
 		padding-right: 0;
 		padding-bottom: 1.5rem;
-		/* min-height: auto; */
+		min-height: auto;
 		border-right: none;
 		border-bottom: 4px solid transparent;
 		animation: index-border-11 1s ease forwards 3.8s;
@@ -651,8 +652,9 @@ footer {
 		}
 	}
 	.index .index-item-wrapper .index-right {
-		min-height: auto;
+		min-height: auto !important;
 		max-height: auto;
+		min-height: 124px;
 		/* min-width: 333.9px; */
 		max-width: 333.9px;
 		padding-top: 1rem;
