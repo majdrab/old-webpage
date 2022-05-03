@@ -177,23 +177,26 @@ h3 {
 /* NAVBAR */
 nav {
 	display: flex;
+	width: 100vw;
 	justify-content: space-between;
-	padding: 1.5em;
+	padding: 1.3rem;
 	background-color: #202020;
-	position: sticky;
+	position: fixed;
 	top: 0;
 }
-.nav-left {
+.nav-side {
 	display: flex;
-	flex: 1;
 	max-width: 20%;
 	justify-content: space-between;
+	margin: auto 1.5rem;
+	/* border: 2px solid red; */
 }
-nav > .nav-left > div {
-	font-size: 1rem;
-	text-transform: uppercase;
+.nav-side:nth-child(1) {
+	flex: 1;
 }
 .nav-link-wrapper {
+	font-size: 1.1rem;
+	text-transform: uppercase;
 	height: 1.5em;
 	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.5s;
@@ -215,11 +218,6 @@ nav > .nav-left > div {
 	color: #ffffff !important;
 }
 
-.nav-right > .myNameDisplay > div {
-	color: #dadada;
-	font-size: 1.1rem;
-	text-transform: uppercase;
-}
 /* MAIN */
 main {
 	width: 75%;
@@ -446,12 +444,10 @@ main {
 .about .about-title {
 	color: #202020;
 }
-.about .about-border,
-.project .about-border {
+.about .about-border {
 	border-bottom: 2px solid #202020;
 }
 .about .certificates-grid {
-	/* display: flex; */
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(450px, 450px));
 	grid-auto-rows: auto !important; /* mozilla doesnt accept this */
@@ -572,8 +568,8 @@ footer {
 	/* GENERAL */
 
 	/* NAVBAR */
-	.nav-left {
-		max-width: 27%;
+	.nav-side {
+		max-width: 23%;
 	}
 
 	/* MAIN */
@@ -586,8 +582,8 @@ footer {
 	/* GENERAL */
 
 	/* NAVBAR */
-	.nav-left {
-		max-width: 33%;
+	.nav-side {
+		max-width: 27%;
 	}
 
 	/* MAIN */
@@ -623,8 +619,8 @@ footer {
 	}
 
 	/* NAVBAR */
-	.nav-left {
-		max-width: 40%;
+	.nav-side {
+		max-width: 30%;
 	}
 
 	/* MAIN */
@@ -733,23 +729,41 @@ footer {
 		flex-direction: row;
 		align-items: center;
 	}
-	.nav-left {
+	.nav-side {
 		flex-direction: column;
-		align-items: left;
+		margin: auto 0.4rem;
 	}
 	.nav-link-wrapper {
-		height: 1.1em;
+		height: 1.2rem;
 		border-bottom: none;
+	}
+	.nav-side:nth-of-type(1) .nav-link-wrapper {
 		border-left: 2px solid transparent;
 		transition: border-left 0.5s;
 		padding-left: 7px;
 	}
-	.nav-link-wrapper:hover {
+	.nav-side:nth-of-type(1) .nav-link-wrapper:hover {
 		border-left: 2px solid #ffffff;
 		border-bottom: none;
 	}
-	.active-nav-link {
+	.nav-side:nth-of-type(1) .nav-link-wrapper:nth-of-type(1) {
+		margin-bottom: 0.5rem;
+	}
+	.nav-side:nth-of-type(1) .active-nav-link {
 		border-left: 2px solid #ffffff;
+		border-bottom: none;
+	}
+	.nav-side:nth-of-type(2) .nav-link-wrapper {
+		border-right: 2px solid transparent;
+		transition: border-left 0.5s;
+		padding-right: 7px;
+	}
+	.nav-side:nth-of-type(2) .nav-link-wrapper:hover {
+		border-right: 2px solid #ffffff;
+		border-bottom: none;
+	}
+	.nav-side:nth-of-type(2) .active-nav-link {
+		border-right: 2px solid #ffffff;
 		border-bottom: none;
 	}
 
@@ -772,5 +786,13 @@ footer {
 	/* main-about */
 	.about .about-section-wrapper .about-basic-wrapper p {
 		font-size: 1.2rem;
+	}
+	.about .certificates-grid {
+		grid-template-columns: repeat(auto-fill, minmax(340px, 340px));
+		grid-auto-rows: 340px;
+	}
+	.about .certificates-grid .about-cert-wrapper {
+		max-height: 340px;
+		width: 340px;
 	}
 }
