@@ -226,6 +226,7 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	text-align: justify;
+	padding-top: 2.5rem;
 }
 
 /* main-home */
@@ -235,7 +236,6 @@ main {
 	align-items: center;
 }
 .index .index-item-wrapper {
-	/* border: 1px solid #ca1d1d; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -774,6 +774,9 @@ footer {
 		margin: 1em auto;
 	}
 	/* main-home */
+	.index {
+		padding-top: 6rem;
+	}
 	.index .index-item-wrapper .index-right {
 		/* min-width: 296.8px; */
 		max-width: 296.8px;
