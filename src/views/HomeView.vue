@@ -1,9 +1,25 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<template>
+    <div>hello</div> 
+</template>
+
+<script>
+// import Header from "./Components/Header"
+
+export default {
+  name: "HomeView",
+  baseRoute: "/media/",
+  components: {},
+  data() {
+    return {
+    }
+  },
+  computed: {
+  },
+  methods: {
+  }
+}
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style lang="scss">
+
+</style>
