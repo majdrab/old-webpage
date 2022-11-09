@@ -1,0 +1,90 @@
+// Media queries
+$mediaMobile: "screen and (max-width: 768px)";
+$mediaTablet: "screen and (max-width: 1024px)";
+$mediaDesktopSmall: "screen and (max-width: 1366px)";
+$fontFamily: "Inter", sans-serif;
+$fontWeight: "Inter", sans-serif;
+
+// Basic
+$bg: #FBFBFD;
+$bgDark: #252529;
+$bgDarkLighter: #2a2a2e;
+$borderColor: #EAEDF3;
+$borderColorDarker: #D8DCE6;
+$borderColorDark: #2E2E33;
+$borderDefault: 1px solid $borderColor;
+$boxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+$borderRadius: 5px;
+
+// Text colors
+$textMain: #3E3F42;
+$textBase: #6B6C6F;
+$textSecondary: #9EA0A5;
+$textLight: #CECFD2;
+
+// Project colors
+$success: #21ac33;
+$primary: #1665D8;
+$secondary: #16d87e;
+$warning: #ea9d1c;
+$error: #e4341d;
+
+$projectColors: (
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    error: $error,
+    warning: $warning
+);
+
+
+// Other colors
+$red: #d93636;
+$orange: #ff9f1a;
+$yellow: #eec700;
+$lime: #8acc47;
+$green: #47cc8a;
+$cyan: #30bfbf;
+$blue: #00aaff;
+$purple: #8f7ee6;
+$pink: #e16ab8;
+$gray: #98a4b3;
+
+// /**
+//  * loop colors example
+//     @each $name, $color in $colors {
+//       &.#{"" + $name} {
+//         color: white;
+//         background-color: $color;
+//         border-color: transparent;
+//       }
+//     }
+// */
+
+
+$colors: (
+    red: $red,
+    orange: $orange,
+    yellow: $yellow,
+    lime: $lime,
+    green: $green,
+    cyan: $cyan,
+    blue: $blue,
+    purple: $purple,
+    pink: $pink,
+    gray: $gray
+);
+
+// Other
+$headerHeightDefault: 68px;
+
+// Dark mode
+$darkBgDarker: #25272a;
+$darkBg: #2f3136;
+$darkBgLight: #35373c;
+$darkBgLighter: #41444c;
+$darkTextMain: whitesmoke;
+$darkTextBase: rgba(white, 0.65);
+$darkTextSecondary: rgba(white, 0.45);
+$darkBorderColor: #393c43;
+$darkBoxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
