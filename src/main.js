@@ -4,6 +4,8 @@ import router from "./router"
 
 import "./icons"
 
+import MajIcon from "./components/Maj-Kit/MajIcon.vue"
+
 const app = createApp(App)
 
 app.use(router)

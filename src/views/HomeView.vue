@@ -1,5 +1,6 @@
 <template>
     <div>hello</div> 
+    <MajIcon :icon="['fas', 'user']"/>
 </template>
 
 <script>
@@ -7,7 +8,6 @@
 
 export default {
   name: "HomeView",
-  baseRoute: "/media/",
   components: {},
   data() {
     return {
