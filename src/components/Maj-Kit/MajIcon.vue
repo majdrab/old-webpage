@@ -1,0 +1,38 @@
+<template>
+    <FontAwesomeIcon
+        class="maj-icon"
+        :icon="getIcon"
+    />
+</template>
+
+<script>
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+
+export default {
+  name: "MajIcon",
+  components: { FontAwesomeIcon },
+  props: {
+    icon: { type: [String, Array], default: "" },
+    type: { type: String, default: "" }
+  },
+  data () {
+    return {
+      activeType: ""
+    }
+  },
+  computed: {
+    getIcon () {
+      if (Array.isArray(this.icon)) return this.icon
+      return [ this.activeType, this.icon ]
+    }
+  },
+  created () {
+    this.setType()
+  },
+  methods: {
+    setType () {
+      this.activeType = this.type || "far"
+    }
+  }
+}
+</script>
