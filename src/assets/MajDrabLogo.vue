@@ -85,5 +85,12 @@
     </svg>
 </template>
 
+<script>
+export default {
+  name: "MajDrabLogo"
+}
+</script>
+
+
 <style lang="scss" scoped>
 </style>
