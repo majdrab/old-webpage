@@ -12,11 +12,10 @@
                         v-for="(link, index) in $options.links"
                         :key="`link-${index}`"
                         :title="link.title"
-                        :to="`/${link.route}`"
-                        @click="openNav = false"
+                        :to="link.route" 
                     >
-                        <MajIcon :icon="link.icon" :type="iconStyle(`/${link.route}`)"/>
-                        <span>{{ link.title }}</span>
+                        <MajIcon :icon="link.icon" :type="iconStyle(link.route)"/>
+                        <span>{{ link.title }}</span> 
                     </router-link>
                 </div>
             </div>
@@ -39,36 +38,34 @@ import MajDrabLogo from "@/assets/MajDrabLogo.vue"
 export default {
   links: [
     {
-      route: "",
+      route: "/",
       title: "Home",
       icon: "house"
     },
     {
-      route: "about",
+      route: "/about",
       title: "About",
       icon: "user"
     },
     {
-      route: "projects",
+      route: "/projects",
       title: "Projects",
       icon: "star-sharp"
     }
   ],
-  // data () {
-  //   return {
-  //   }
-  // },
   components: { MajDrabLogo },
+  data () {
+    return {
+      currentLinkRoute: "/"
+    }
+  }, 
   methods: {
-    iconStyle (path, exact) {
+    iconStyle (path) {
       let style = "far"
-      if (
-        (exact && this.$route.path === path) ||
-        (!exact && this.$route.path.startsWith(path))
-      ) {
+      if (this.$route.path === path) {
         style = "fas"
       }
-      console.log(exact)
+      
       return style
     }
   }
@@ -83,13 +80,12 @@ export default {
   align-items: flex-start;
   height: 100vh;
   width: 100%;
-  max-width: 260px;
+  max-width: 230px;
   transition: left 0.5s, max-width 0.3s ease-out;
   .navigation__container {
     width: 100%;
     height: 100%;
-    background: $bgDark;
-    background: linear-gradient(0deg, $bgDark, $bgDarkLighter);
+    background: transparent;
     flex-grow: 1;
     display: flex;
     flex-flow: column nowrap;
@@ -181,16 +177,16 @@ export default {
           transition: all 0.1s;
         }
         &:hover {
-          transition: all 0.05s;
+          transition: all 0.1s;
           cursor: pointer;
           background: rgba(#3b3b3f, 0.6);
           svg {
             color: rgba(white, 0.75);
-            transition: all 0.05s;
+            transition: all 0.1s;
           }
           span {
             color: white;
-            transition: all 0.05s;
+            transition: all 0.1s;
           }
         }
         &:active {
@@ -201,7 +197,7 @@ export default {
         &.router-link-exact-active {
           background: rgba(#3b3b3f, 0.6);
           svg {
-            color: lighten($primary, 2%);
+            color: lighten($blue, 2%);
             animation: navigation-active-icon 0.2s;
             @keyframes navigation-active-icon {
               from {
