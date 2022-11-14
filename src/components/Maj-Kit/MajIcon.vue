@@ -15,23 +15,10 @@ export default {
     icon: { type: [String, Array], default: "" },
     type: { type: String, default: "" }
   },
-  data () {
-    return {
-      activeType: ""
-    }
-  },
   computed: {
     getIcon () {
       if (Array.isArray(this.icon)) return this.icon
-      return [ this.activeType, this.icon ]
-    }
-  },
-  created () {
-    this.setType()
-  },
-  methods: {
-    setType () {
-      this.activeType = this.type || "far"
+      return [ this.type, this.icon ]
     }
   }
 }
