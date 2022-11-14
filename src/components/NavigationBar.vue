@@ -27,6 +27,10 @@
                     <MajIcon :icon="['fab', 'github']"/>
                     <span>GitHub Repo</span>
                 </a>
+                <div>
+                    Copyright &copy; 2022 <br />
+                    Maj Drab, All Rights Reserved
+                </div>
             </div>
         </div>
     </nav>
