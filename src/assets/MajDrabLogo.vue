@@ -1,6 +1,6 @@
 <template>
     <svg
-        id="maj-svg"
+        class="maj-drab-logo"
         width="363"
         height="289"
         viewBox="0 0 363 289"
@@ -93,4 +93,7 @@ export default {
 
 
 <style lang="scss" scoped>
+.maj-drab-logo {
+  overflow: visible;
+}
 </style>
