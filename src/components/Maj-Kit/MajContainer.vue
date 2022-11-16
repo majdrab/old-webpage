@@ -22,8 +22,6 @@ export default {
 <style lang="scss">
 .maj-container {
   display: flex;
-  height: 100%;
-  width: 100%;
   flex-grow: 1;
 
   &--vertical {
