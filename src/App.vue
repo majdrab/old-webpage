@@ -26,8 +26,31 @@ export default {
       
     }
   },
-  computed: {
-  }
+  // methods: {
+  //   setupShards: function() {
+
+  //     this.shards = [];
+
+  //     for (var i = 0; i < this.NUM_SHARDS; i++) {
+  //       this.shards.push(this.setupShard(i));
+  //     }
+  //   },
+
+  //   setupShard: function(index) {
+
+  //     var shard = new ShardView(
+  //       {
+  //         index  : index,
+
+  //         width  : 100,
+  //         height : 100
+  //       });
+
+  //     shard.generate();
+
+  //     return shard;
+  //   },
+  // }
 }
 </script>
 
