@@ -84,12 +84,13 @@ export default {
   align-items: flex-start;
   height: 100vh;
   width: 100%;
-  max-width: 230px;
+  max-width: 200px;
   transition: left 0.5s, max-width 0.3s ease-out;
   .navigation__container {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: $bgDark;
+    background: linear-gradient(0deg, $bgDark, $bgDarkLighter);
     flex-grow: 1;
     display: flex;
     flex-flow: column nowrap;
