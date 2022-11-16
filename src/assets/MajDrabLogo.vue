@@ -95,5 +95,109 @@ export default {
 <style lang="scss" scoped>
 .maj-drab-logo {
   overflow: visible;
+  animation: fill 0.5s ease forwards 3.5s;
+  
+  & path:nth-child(1) {
+    stroke-dasharray: 352.32;
+    stroke-dashoffset: 352.32;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards;
+  }
+  & path:nth-child(2) {
+    stroke-dasharray: 151.68;
+    stroke-dashoffset: 151.68;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 0.2s;
+  }
+  & path:nth-child(3) {
+    stroke-dasharray: 40.762;
+    stroke-dashoffset: 40.762;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 0.4s;
+  }
+  & path:nth-child(4) {
+    stroke-dasharray: 473.22;
+    stroke-dashoffset: 473.22;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 0.6s;
+  }
+  & path:nth-child(5) {
+    stroke-dasharray: 248.77;
+    stroke-dashoffset: 248.77;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 0.8s;
+  }
+  & path:nth-child(6) {
+    stroke-dasharray: 392.774;
+    stroke-dashoffset: 392.774;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 1s;
+  }
+  & path:nth-child(7) {
+    stroke-dasharray: 330.051;
+    stroke-dashoffset: 330.051;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 1.2s;
+  }
+  & path:nth-child(8) {
+    stroke-dasharray: 473.22;
+    stroke-dashoffset: 473.22;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 1.4s;
+  }
+  & path:nth-child(9) {
+    stroke-dasharray: 337.344;
+    stroke-dashoffset: 337.344;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 1.6s;
+  }
+  & path:nth-child(10) {
+    stroke-dasharray: 151.678;
+    stroke-dashoffset: 151.678;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 1.8s;
+  }
+  & path:nth-child(11) {
+    stroke-dasharray: 298.684;
+    stroke-dashoffset: 298.684;
+    animation: line-anim 1.5s ease forwards 2s;
+  }
+  & path:nth-child(12) {
+    stroke-dasharray: 473.22;
+    stroke-dashoffset: 473.22;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 2.2s;
+  }
+  & path:nth-child(13) {
+    stroke-dasharray: 330.05;
+    stroke-dashoffset: 330.05;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 2.4s;
+  }
+  & path:nth-child(14) {
+    stroke-dasharray: 200.044;
+    stroke-dashoffset: 200.044;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 2.6s;
+  }
+  & path:nth-child(15) {
+    stroke-dasharray: 40.762;
+    stroke-dashoffset: 40.762;
+    stroke-linecap: square;
+    animation: line-anim 1.5s ease forwards 2.8s;
+  }
+  @keyframes line-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes fill {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: #202020;
+    }
+  }
 }
 </style>
