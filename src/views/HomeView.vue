@@ -1,14 +1,15 @@
 <template>
-    <div>hello</div> 
-    <MajIcon :icon="['fas', 'user']"/>
+    <MajContainer centerX centerY>
+        <MajDrabLogo />
+    </MajContainer>
 </template>
 
 <script>
-// import Header from "./Components/Header"
+import MajDrabLogo from "@/assets/MajDrabLogo.vue"
 
 export default {
   name: "HomeView",
-  components: {},
+  components: {MajDrabLogo},
   data() {
     return {
     }
