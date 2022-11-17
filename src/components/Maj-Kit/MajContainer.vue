@@ -23,8 +23,6 @@ export default {
 <style lang="scss">
 .maj-container {
   display: flex;
-  // flex-grow: 1;
-  // width: 100%;
 
   &--vertical {
     flex-direction: column;
