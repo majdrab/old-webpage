@@ -1,6 +1,7 @@
 <template>
     <div :class="[
-        'maj-container maj-container--' + ( horizontal ? 'horizontal' : 'vertical'),
+        'maj-container',
+        {'maj-container--vertical': vertical},
         {'maj-container--centerX': centerX},
         {'maj-container--centerY': centerY}
     ]">
@@ -12,7 +13,7 @@
 export default {
   name: "MajContainer",
   props: {
-    horizontal: { type: Boolean, default: false },
+    vertical: { type: Boolean, default: false },
     centerX: { type: Boolean, default: false },
     centerY: { type: Boolean, default: false }
   }
@@ -22,13 +23,11 @@ export default {
 <style lang="scss">
 .maj-container {
   display: flex;
-  flex-grow: 1;
+  // flex-grow: 1;
+  // width: 100%;
 
   &--vertical {
     flex-direction: column;
-  }
-  &--horizontal {
-    flex-direction: row;
   }
   &--centerX {
     align-items: center;
