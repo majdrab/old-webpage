@@ -6,37 +6,20 @@ $fontFamily: "Inter", sans-serif;
 $fontWeight: 400;
 
 // Basic
-$bg: #FBFBFD;
-$bgDark: #252529;
-$bgDarkLighter: #2a2a2e;
-$borderColor: #EAEDF3;
-$borderColorDarker: #D8DCE6;
-$borderColorDark: #2E2E33;
+$bg: #f1f1f7;
+$bgDark: #313136;
+$borderColor: #dfe2e7;
+$borderColorDark: #313136;
 $borderDefault: 1px solid $borderColor;
-$boxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+$borderDefaultDark: 1px solid $borderColorDark;
+$boxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 $borderRadius: 5px;
 
 // Text colors
-$textMain: #3E3F42;
-$textBase: #6B6C6F;
-$textSecondary: #9EA0A5;
+$textDark: #3b3c3f;
+$textDarkIsh: #67686b;
+$textLightIsh: #9EA0A5;
 $textLight: #CECFD2;
-
-// Project colors
-$success: #21ac33;
-$primary: #1665D8;
-$secondary: #16d87e;
-$warning: #ea9d1c;
-$error: #e4341d;
-
-$projectColors: (
-    primary: $primary,
-    secondary: $secondary,
-    success: $success,
-    error: $error,
-    warning: $warning
-);
-
 
 // Other colors
 $red: #d93636;
@@ -49,18 +32,6 @@ $blue: #00aaff;
 $purple: #8f7ee6;
 $pink: #e16ab8;
 $gray: #98a4b3;
-
-// /**
-//  * loop colors example
-//     @each $name, $color in $colors {
-//       &.#{"" + $name} {
-//         color: white;
-//         background-color: $color;
-//         border-color: transparent;
-//       }
-//     }
-// */
-
 
 $colors: (
     red: $red,
@@ -75,16 +46,13 @@ $colors: (
     gray: $gray
 );
 
-// Other
-$headerHeightDefault: 68px;
-
-// Dark mode
-$darkBgDarker: #25272a;
-$darkBg: #2f3136;
-$darkBgLight: #35373c;
-$darkBgLighter: #41444c;
-$darkTextMain: whitesmoke;
-$darkTextBase: rgba(white, 0.65);
-$darkTextSecondary: rgba(white, 0.45);
-$darkBorderColor: #393c43;
-$darkBoxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+// /**
+//  * loop colors example
+//     @each $name, $color in $colors {
+//       &.#{"" + $name} {
+//         color: white;
+//         background-color: $color;
+//         border-color: transparent;
+//       }
+//     }
+// */
