@@ -1,11 +1,12 @@
 <template>
     <MajContainer class="home" centerX centerY>
-        <MajDrabLogo />
-        <MajContainer vertical class="home__description">
-            <div>I'm a junior front-end web developer and designer. Welcome to my portfolio website!</div>
-            <div>The website is still a work in progress.</div>
+        <MajContainer class="home__container" >
+            <MajDrabLogo class="home__container-logo" />
+            <MajContainer vertical class="home__container-description">
+                <div>I'm a junior front-end web developer and designer. Welcome to my portfolio website!</div>
+                <div>The website is still a work in progress.</div>
+            </MajContainer>
         </MajContainer>
-        
     </MajContainer>
 </template>
 
@@ -28,20 +29,29 @@ export default {
 
 <style lang="scss">
 .home {
-  width: 100%;
-  flex-wrap: wrap;
-  &__description {
-    max-width: 300px;
-    max-height: 239px;
-    height: 100%;
-    div {
-      // text-align: center;
-      font-weight: 500;
-      font-size: 1.8rem;
-      // text-align: justify;
-      color: $textDark;
-      &:first-of-type {
-        margin-bottom: auto;
+  width: calc(100vw - 200px);
+  height: 100vh;
+  &__container {
+    max-width: 700px;
+    &-logo {
+      min-width: 200px;
+      flex: 1 1 0px;
+    }
+    &-description {
+      margin-left: 20px;
+      flex: 1 1 0px;
+      background: $blue;
+      border-radius: 10px;
+      padding: 20px;
+      div {
+        // text-align: center;
+        font-weight: 500;
+        font-size: 1.62rem;
+        text-align: justify;
+        color: $bg;
+        &:first-of-type {
+          margin-bottom: auto;
+        }
       }
     }
   }
