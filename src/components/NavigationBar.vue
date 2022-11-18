@@ -71,7 +71,7 @@ export default {
   align-items: flex-start;
   height: 100vh;
   width: 100%;
-  min-width: 170px;
+  min-width: 200px;
   max-width: 200px;
   background: $bgDark;
   
