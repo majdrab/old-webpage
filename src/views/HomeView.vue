@@ -3,8 +3,8 @@
         <MajContainer class="home__container" >
             <MajDrabLogo class="home__container-logo" />
             <MajContainer vertical class="home__container-description">
-                <div>I'm a junior front-end web developer and designer. Welcome to my portfolio website!</div>
-                <div>The website is still a work in progress.</div>
+                <MajTitle is="h4">I'm a junior front-end web developer and designer. Welcome to my portfolio website!</MajTitle>
+                <MajTitle is="h4">The website is still a work in progress.</MajTitle>
             </MajContainer>
         </MajContainer>
     </MajContainer>
@@ -40,15 +40,13 @@ export default {
     &-description {
       margin-left: 20px;
       flex: 1 1 0px;
-      background: $blue;
+      background: lighten($blue, 4%);
       border-radius: 10px;
       padding: 20px;
-      div {
-        // text-align: center;
-        font-weight: 500;
-        font-size: 1.62rem;
-        text-align: justify;
+      .maj-title {
         color: $bg;
+        text-align: justify;
+
         &:first-of-type {
           margin-bottom: auto;
         }
