@@ -30,8 +30,8 @@ h3.maj-title  {
   font-weight: 500;
 }
 h4.maj-title  {
-  font-size: 1.8rem;
-  line-height: 2.16rem;
+  font-size: 1.6rem;
+  line-height: 1.92rem;
   font-weight: 500;
 }
 </style>
