@@ -70,7 +70,6 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100vh;
-  width: 100%;
   min-width: 200px;
   max-width: 200px;
   background: $bgDark;
@@ -88,21 +87,14 @@ export default {
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
-      padding: 16px 25px;
-      text-decoration: none;
-      font-size: 14px;
+      height: 50px;
+      padding: 0 25px;
+      font-size: 0.875rem;
       font-weight: 500;
-      line-height: 1.2;
       width: 100%;
-      border-radius: 0;
-      border: none;
-      outline: none;
-      background: transparent;
       transition: background-color 0.1s, transform 0.1s;
-      border-left: solid 0px transparent;
-      position: relative;
       svg {
-        font-size: 16px;
+        font-size: 1rem;
         width: 18px;
         transition: color 0.1s;
         color: rgba($textLightIsh, 0.8);
