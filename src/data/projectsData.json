@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Interactive Rating Component",
+    "image": "./images/projects/3.jpg",
+    "langsUsed": ["html", "css", "js"]
+  },
+  {
+    "name": "Random Color Boxes",
+    "image": "./images/projects/2.jpg",
+    "langsUsed": ["html", "css", "js"]
+  },
+  {
+    "name": "Score Keeper",
+    "image": "./images/projects/1.jpg",
+    "langsUsed": ["html", "css", "js"]
+  },
+  {
+    "name": "Pricing Panel",
+    "image": "./images/projects/0.jpg",
+    "langsUsed": ["html", "css"]
+  }
+]
