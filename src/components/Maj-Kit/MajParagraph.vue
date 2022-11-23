@@ -15,8 +15,8 @@ export default {
 
 <style lang="scss">
 p.maj-paragraph {
-  font-size: 1.2rem;
-  line-height: 1.3rem;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
   font-weight: 400;
 }
 </style>
