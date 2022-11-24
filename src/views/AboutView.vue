@@ -1,6 +1,5 @@
 <template>
     <MajContainer vertical class="about">
-        <div class="about__header-bg"></div>
         <MajContainer class="about__section">
             <MajContainer class="about__section-sub">
                 <img class="about__my-img" :src="getImage" alt="My pictures" @click="nextImage()">
@@ -101,7 +100,7 @@ export default {
 <style lang="scss">
 .about {
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 70px);
   padding: 30px;
   gap: 40px;
   &__section {
@@ -122,16 +121,16 @@ export default {
         border-radius: 50%;
       }
       .maj-paragraph {
-        color: $textDarkIsh;
+        color: $darkEr;
         text-align: justify;
       }
       .maj-icon {
-        color: $textDarkIsh;
+        color: $darkIsh;
         font-size: 4rem;
       }
     }
     .maj-title {
-      color: $textDark;
+      color: $dark;
     }
     .about__certificates {
       flex-wrap: wrap;

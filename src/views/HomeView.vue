@@ -30,7 +30,7 @@ export default {
 <style lang="scss">
 .home {
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 70px);
   &__container {
     max-width: 700px;
     &-logo {
@@ -40,11 +40,11 @@ export default {
     &-description {
       margin-left: 20px;
       flex: 1 1 0px;
-      background: lighten($blue, 4%);
+      background: $lavender;
       border-radius: 10px;
       padding: 20px;
       .maj-title {
-        color: $bg;
+        color: $light;
         text-align: justify;
 
         &:first-of-type {
