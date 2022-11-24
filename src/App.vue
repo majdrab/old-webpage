@@ -9,7 +9,7 @@
             </nav>
         </div>
     </header> -->
-    
+    <BgHeader />
     <NavigationBar />
     <RouterView />
 </template>
@@ -18,9 +18,10 @@
 import { RouterLink, RouterView } from "vue-router"
 
 import NavigationBar from "@/components/NavigationBar.vue"
+import BgHeader from "./components/BgHeader.vue";
 
 export default {
-  components: { NavigationBar },
+  components: { NavigationBar, BgHeader },
   data () {
     return {
       
