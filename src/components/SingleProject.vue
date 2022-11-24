@@ -59,14 +59,14 @@ export default {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      color: $textDark;
+      color: $dark;
     }
   }
   &:hover {
-    border: 1px solid $blue;
+    border: 1px solid $secondary;
     .single-project__info {
-      background: rgba($navColor, 0.80);
-      border-top: 1px solid $blue;
+      background: rgba($light, 0.80);
+      border-top: 1px solid $secondary;
       bottom: 0;
     }
   }

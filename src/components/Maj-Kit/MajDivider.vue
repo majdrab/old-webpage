@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss">
 .maj-divider {
-  background: $bgDark;
+  background: $dark;
   &__horizontal {
     height: 2px;
     // width: 100%;
