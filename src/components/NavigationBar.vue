@@ -7,11 +7,18 @@
                 :title="link.title"
                 :to="link.route" 
             >
-                <MajIcon :icon="link.icon" :type="iconStyle(link.route)"/>
+                <MajIcon :icon="[iconStyle(link.route), link.icon]"/>
                 <span>{{ link.title }}</span> 
             </router-link>
+            <router-link
+                title="DnD"
+                to="/dnd" 
+            >
+                <MajIcon :icon="['fab', 'd-and-d']"/>
+                <span>DnD</span> 
+            </router-link>
         </div>
-        <div class="navigation__bottom">
+        <!-- <div class="navigation__bottom">
             <a 
                 href="https://github.com/majdrab/majdrab.github.io"
                 title="Github Repo"
@@ -20,7 +27,7 @@
                 <MajIcon :icon="['fab', 'github']"/>
                 <span>GitHub Repo</span>
             </a>
-        </div>
+        </div> -->
     </nav>
 </template>
 
@@ -52,10 +59,10 @@ export default {
   methods: {
     iconStyle (path) {
       let style = "far"
+      
       if (this.$route.path === path) {
         style = "fas"
       }
-      
       return style
     }
   }
@@ -65,19 +72,20 @@ export default {
 <style lang="scss">
 .navigation {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   flex-grow: 1;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 100vh;
-  min-width: 200px;
-  max-width: 200px;
-  background: $bgDark;
+  height: 60px;
+  width: 100vw;
+  position: sticky;
+  background: transparent;
+  z-index: 10;
   
   .navigation__top,
   .navigation__bottom {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
@@ -85,9 +93,9 @@ export default {
     button {
       display: flex;
       flex-flow: row nowrap;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      height: 50px;
+      height: 60px;
       padding: 0 25px;
       font-size: 0.875rem;
       font-weight: 500;
@@ -142,15 +150,11 @@ export default {
           color: white;
         }
       }
-      & + a,
-      & + button {
-        margin-top: 1px;
-      }
     }
   }
-  .navigation__top {
-    padding: 48.8px 0;
-    flex-grow: 1;
-  }
+  // .navigation__top {
+  //   padding: 48.8px 0;
+  //   flex-grow: 1;
+  // }
 }
 </style>
