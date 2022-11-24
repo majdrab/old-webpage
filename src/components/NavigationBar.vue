@@ -72,44 +72,44 @@ export default {
 <style lang="scss">
 .navigation {
   display: flex;
-  flex-flow: row nowrap;
-  flex-grow: 1;
-  justify-content: flex-start;
-  align-items: flex-start;
+  // flex-flow: row nowrap;
+  // flex-grow: 1;
+  // justify-content: flex-start;
+  // align-items: flex-start;
   height: 60px;
   width: 100vw;
-  position: sticky;
-  background: transparent;
+  // position: sticky;
+  // background: transparent;
   z-index: 10;
+  margin-top: 10px;
   
   .navigation__top,
   .navigation__bottom {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    // flex-flow: row nowrap;
+    justify-content: center;
     width: 100%;
     a,
     button {
       display: flex;
-      flex-flow: row nowrap;
+      // flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
       height: 60px;
       padding: 0 25px;
-      font-size: 0.875rem;
+      // font-size: 0.875rem;
       font-weight: 500;
-      width: 100%;
+      // width: 100%;
       transition: background-color 0.1s, transform 0.1s;
       svg {
         font-size: 1rem;
         width: 18px;
         transition: color 0.1s;
-        color: rgba($textLightIsh, 0.8);
+        color: rgba($lightEr, 0.8);
       }
       span {
-        color: $textLightIsh;
-        white-space: nowrap;
+        color: $lightEr;
+        $light-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 100%;
@@ -119,25 +119,25 @@ export default {
       &:hover {
         transition: all 0.1s;
         cursor: pointer;
-        background: rgba(#3b3b3f, 0.6);
+        // background: rgba($light, 0.6);
         svg {
-          color: rgba(white, 0.75);
+          color: rgba($light, 0.75);
           transition: all 0.1s;
         }
         span {
-          color: white;
+          color: $light;
           transition: all 0.1s;
         }
       }
       &:active {
         transition: all 0.1s;
-        background: rgba(#3b3b3f, 0.8);
+        // background: rgba($light, 0.8);
       }
       &.router-link-active,
       &.router-link-exact-active {
-        background: rgba(#3b3b3f, 0.6);
+        // background: rgba($light, 0.6);
         svg {
-          color: lighten($blue, 2%);
+          color: $secondary;
           animation: navigation-active-icon 0.2s;
           @keyframes navigation-active-icon {
             from {
@@ -147,7 +147,7 @@ export default {
           }
         }
         span {
-          color: white;
+          color: $light;
         }
       }
     }
