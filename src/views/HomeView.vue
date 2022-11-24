@@ -29,8 +29,8 @@ export default {
 
 <style lang="scss">
 .home {
-  width: calc(100vw - 200px);
-  height: 100vh;
+  width: 100vw;
+  height: calc(100vh - 60px);
   &__container {
     max-width: 700px;
     &-logo {

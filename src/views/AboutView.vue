@@ -1,5 +1,6 @@
 <template>
     <MajContainer vertical class="about">
+        <div class="about__header-bg"></div>
         <MajContainer class="about__section">
             <MajContainer class="about__section-sub">
                 <img class="about__my-img" :src="getImage" alt="My pictures" @click="nextImage()">
@@ -85,9 +86,6 @@ export default {
       return this.$options.image_links[this.picIndex]
     }
   },
-  // created () {
-  //   this.nextImage()
-  // },
   methods: {
     nextImage () {
       if (this.picIndex < this.$options.image_links.length - 1) {
@@ -102,12 +100,10 @@ export default {
 
 <style lang="scss">
 .about {
-  width: calc(100vw - 200px);
-  height: 100vh;
+  width: 100vw;
+  height: calc(100vh - 60px);
   padding: 30px;
   gap: 40px;
-  overflow-y: auto;
-  
   &__section {
     max-width: 1000px;
     width: 100%;
