@@ -100,7 +100,8 @@ export default {
 <style lang="scss">
 .about {
   width: 100vw;
-  height: calc(100vh - 70px);
+  // height: calc(100vh - 70px);
+  flex-grow: 1;
   padding: 30px;
   gap: 40px;
   &__section {

@@ -30,7 +30,8 @@ export default {
 <style lang="scss">
 .projects {
   width: 100vw;
-  height: calc(100vh - 70px);
+  // height: calc(100vh - 70px);
+  flex-grow: 1;
   flex-wrap: wrap;
   gap: 20px;
   padding: 30px;

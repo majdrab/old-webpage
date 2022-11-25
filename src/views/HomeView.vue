@@ -30,7 +30,8 @@ export default {
 <style lang="scss">
 .home {
   width: 100vw;
-  height: calc(100vh - 70px);
+  // height: calc(100vh - 70px);
+  flex-grow: 1;
   &__container {
     max-width: 700px;
     &-logo {
