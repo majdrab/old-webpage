@@ -1,6 +1,6 @@
 <template>
     <nav class="navigation">
-        <div class="navigation__top">
+        <MajContainer centerY class="navigation__side">
             <router-link
                 v-for="(link, index) in $options.links"
                 :key="`link-${index}`"
@@ -17,7 +17,7 @@
                 <MajIcon :icon="['fab', 'd-and-d']"/>
                 <span>DnD</span> 
             </router-link>
-        </div>
+        </MajContainer>
         <!-- <div class="navigation__bottom">
             <a 
                 href="https://github.com/majdrab/majdrab.github.io"
@@ -72,35 +72,22 @@ export default {
 <style lang="scss">
 .navigation {
   display: flex;
-  // flex-flow: row nowrap;
-  // flex-grow: 1;
-  // justify-content: flex-start;
-  // align-items: flex-start;
   height: 60px;
   width: 100vw;
-  // position: sticky;
-  // background: transparent;
-  z-index: 10;
+  z-index: 2;
   margin-top: 10px;
   
-  .navigation__top,
-  .navigation__bottom {
-    display: flex;
-    // flex-flow: row nowrap;
-    justify-content: center;
+  .navigation__side {
     width: 100%;
+    z-index: 2;
     a,
     button {
       display: flex;
-      // flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
       height: 60px;
       padding: 0 25px;
-      // font-size: 0.875rem;
       font-weight: 500;
-      // width: 100%;
-      transition: background-color 0.1s, transform 0.1s;
       svg {
         font-size: 1rem;
         width: 18px;
@@ -109,33 +96,24 @@ export default {
       }
       span {
         color: $lightEr;
-        $light-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         max-width: 100%;
         margin-left: 12px;
         transition: all 0.1s;
       }
+      &:nth-of-type(2) {
+        margin-right: 80px;
+      }
       &:hover {
-        transition: all 0.1s;
         cursor: pointer;
-        // background: rgba($light, 0.6);
         svg {
           color: rgba($light, 0.75);
-          transition: all 0.1s;
         }
         span {
           color: $light;
-          transition: all 0.1s;
         }
-      }
-      &:active {
-        transition: all 0.1s;
-        // background: rgba($light, 0.8);
       }
       &.router-link-active,
       &.router-link-exact-active {
-        // background: rgba($light, 0.6);
         svg {
           color: $secondary;
           animation: navigation-active-icon 0.2s;
