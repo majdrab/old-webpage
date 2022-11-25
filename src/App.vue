@@ -8,7 +8,7 @@
 import { RouterLink, RouterView } from "vue-router"
 
 import SiteHeader from "./components/header/SiteHeader.vue";
-import SiteFooter from "./components/header/SiteFooter.vue";
+import SiteFooter from "./components/footer/SiteFooter.vue";
 
 export default {
   components: { SiteHeader, SiteFooter },
