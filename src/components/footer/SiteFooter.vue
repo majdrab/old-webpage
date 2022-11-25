@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import BgFooter from "./components/footer/BgFooter.vue";
-import FooterContent from "@/components/FooterContent.vue"
+import BgFooter from "./components/BgFooter.vue";
+import FooterContent from "./components/FooterContent.vue"
 
 export default {
   name: "SiteFooter",
