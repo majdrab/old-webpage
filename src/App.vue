@@ -1,57 +1,17 @@
 <template>
-    <!-- <header>
-        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-        <div class="wrapper">
-            <nav>
-                <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/about">About</RouterLink>
-            </nav>
-        </div>
-    </header> -->
-    <BgHeader />
-    <NavigationBar />
+    <SiteHeader />
     <RouterView />
+    <SiteFooter />
 </template>
 
 <script>
 import { RouterLink, RouterView } from "vue-router"
 
-import NavigationBar from "@/components/NavigationBar.vue"
-import BgHeader from "./components/BgHeader.vue";
+import SiteHeader from "./components/header/SiteHeader.vue";
+import SiteFooter from "./components/header/SiteFooter.vue";
 
 export default {
-  components: { NavigationBar, BgHeader },
-  data () {
-    return {
-      
-    }
-  },
-  // methods: {
-  //   setupShards: function() {
-
-  //     this.shards = [];
-
-  //     for (var i = 0; i < this.NUM_SHARDS; i++) {
-  //       this.shards.push(this.setupShard(i));
-  //     }
-  //   },
-
-  //   setupShard: function(index) {
-
-  //     var shard = new ShardView(
-  //       {
-  //         index  : index,
-
-  //         width  : 100,
-  //         height : 100
-  //       });
-
-  //     shard.generate();
-
-  //     return shard;
-  //   },
-  // }
+  components: { SiteHeader, SiteFooter },
 }
 </script>
 
