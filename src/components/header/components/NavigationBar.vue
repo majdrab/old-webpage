@@ -18,16 +18,6 @@
                 <span>DnD</span> 
             </router-link>
         </MajContainer>
-        <!-- <div class="navigation__bottom">
-            <a 
-                href="https://github.com/majdrab/majdrab.github.io"
-                title="Github Repo"
-                target="_blank"
-            >
-                <MajIcon :icon="['fab', 'github']"/>
-                <span>GitHub Repo</span>
-            </a>
-        </div> -->
     </nav>
 </template>
 

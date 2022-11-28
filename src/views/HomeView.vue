@@ -29,9 +29,10 @@ export default {
 
 <style lang="scss">
 .home {
-  width: 100vw;
+  // width: 100vw;
   // height: calc(100vh - 70px);
   flex-grow: 1;
+  background: $orange;
   &__container {
     max-width: 700px;
     &-logo {

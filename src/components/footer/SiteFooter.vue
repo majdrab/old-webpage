@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="footer">
         <BgFooter />
         <FooterContent />
     </footer>
@@ -16,5 +16,11 @@ export default {
 </script>
 
 <style lang="scss">
-
+.footer {
+  height: 150px;
+  position: relative;
+  bottom: 0;
+  // margin-top: auto;
+  overflow: hidden;
+}
 </style>

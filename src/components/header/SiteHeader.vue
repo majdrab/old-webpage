@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="header">
         <BgHeader />
         <NavigationBar />
     </header>
@@ -16,5 +16,10 @@ export default {
 </script>
 
 <style lang="scss">
-
+.header {
+  height: 150px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
 </style>

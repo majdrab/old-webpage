@@ -101,13 +101,14 @@ export default {
 .about {
   width: 100vw;
   // height: calc(100vh - 70px);
-  flex-grow: 1;
+  // flex-grow: 1;
   padding: 30px;
   gap: 40px;
+  position: relative;
   &__section {
     max-width: 1000px;
     width: 100%;
-    max-height: 50vh;
+    // max-height: 50vh;
     margin: 0 auto;
     gap: 20px;
     &-sub {
