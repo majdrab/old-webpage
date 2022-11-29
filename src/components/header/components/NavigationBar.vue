@@ -1,23 +1,21 @@
 <template>
     <nav class="navigation">
-        <MajContainer centerY class="navigation__section">
-            <router-link
-                v-for="(link, index) in $options.links"
-                :key="`link-${index}`"
-                :title="link.title"
-                :to="link.route" 
-            >
-                <MajIcon :icon="[iconStyle(link.route), link.icon]"/>
-                <span>{{ link.title }}</span> 
-            </router-link>
-            <router-link
-                title="DnD"
-                to="/dnd" 
-            >
-                <MajIcon :icon="['fab', 'd-and-d']"/>
-                <span>DnD</span> 
-            </router-link>
-        </MajContainer>
+        <router-link
+            v-for="(link, index) in $options.links"
+            :key="`link-${index}`"
+            :title="link.title"
+            :to="link.route" 
+        >
+            <MajIcon :icon="[iconStyle(link.route), link.icon]"/>
+            <span>{{ link.title }}</span> 
+        </router-link>
+        <router-link
+            title="DnD"
+            to="/dnd" 
+        >
+            <MajIcon :icon="['fab', 'd-and-d']"/>
+            <span>DnD</span> 
+        </router-link>
     </nav>
 </template>
 
@@ -57,67 +55,62 @@ export default {
 <style lang="scss">
 .navigation {
   display: flex;
-  height: 60px;
-  width: 100vw;
-  z-index: 2;
-  margin-top: 10px;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 15px;
+  gap: 20px;
   
-  &__section {
-    width: 100%;
-    z-index: 2;
-    a,
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 60px;
-      padding: 0 25px;
-      font-weight: 500;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0 25px;
+    font-weight: 500;
+    svg {
+      font-size: 1rem;
+      width: 18px;
+      transition: color 0.1s;
+      color: rgba($lightEr, 0.8);
+    }
+    span {
+      color: $lightEr;
+      max-width: 100%;
+      margin-left: 12px;
+      transition: all 0.1s;
+    }
+    &:nth-of-type(2) {
+      margin-right: 50px;
+    }
+    &:nth-of-type(3) {
+      margin-left: 50px;
+    }
+    &:hover {
+      cursor: pointer;
       svg {
-        font-size: 1rem;
-        width: 18px;
-        transition: color 0.1s;
-        color: rgba($lightEr, 0.8);
+        color: rgba($light, 0.75);
       }
       span {
-        color: $lightEr;
-        max-width: 100%;
-        margin-left: 12px;
-        transition: all 0.1s;
+        color: $light;
       }
-      &:nth-of-type(2) {
-        margin-right: 80px;
-      }
-      &:hover {
-        cursor: pointer;
-        svg {
-          color: rgba($light, 0.75);
-        }
-        span {
-          color: $light;
-        }
-      }
-      &.router-link-active,
-      &.router-link-exact-active {
-        svg {
-          color: $secondary;
-          animation: navigation-active-icon 0.2s;
-          @keyframes navigation-active-icon {
-            from {
-              opacity: 0.5;
-              transform: scale(0.6);
-            }
+    }
+    &.router-link-active,
+    &.router-link-exact-active {
+      svg {
+        color: $secondary;
+        animation: navigation-active-icon 0.2s;
+        @keyframes navigation-active-icon {
+          from {
+            opacity: 0.5;
+            transform: scale(0.6);
           }
         }
-        span {
-          color: $light;
-        }
+      }
+      span {
+        color: $light;
       }
     }
   }
-  // .navigation__top {
-  //   padding: 48.8px 0;
-  //   flex-grow: 1;
-  // }
 }
 </style>
