@@ -1,18 +1,19 @@
 <template>
     <nav class="navigation">
-        <router-link
-            v-for="(link, index) in $options.links"
-            :key="`link-${index}`"
-            :title="link.title"
-            :to="link.route" 
-        >
-            <MajIcon :icon="[iconStyle(link.route), link.icon]"/>
-            <span>{{ link.title }}</span> 
+        <router-link title="Home" to="/">
+            <MajIcon :icon="[iconStyle('/projects'), 'house']"/>
+            <span>Home</span> 
         </router-link>
-        <router-link
-            title="DnD"
-            to="/dnd" 
-        >
+        <router-link title="About" to="/about">
+            <MajIcon :icon="[iconStyle('/about'), 'user']"/>
+            <span>About</span> 
+        </router-link>
+        <MenuDice />
+        <router-link title="Projects" to="/projects">
+            <MajIcon :icon="[iconStyle('/projects'), 'star-sharp']"/>
+            <span>Projects</span> 
+        </router-link>
+        <router-link title="DnD" to="/dnd">
             <MajIcon :icon="['fab', 'd-and-d']"/>
             <span>DnD</span> 
         </router-link>
@@ -20,33 +21,18 @@
 </template>
 
 <script>
+import MenuDice from "../../MenuDice.vue";
+
 export default {
   name: "NavigationBar",
-  links: [
-    {
-      route: "/",
-      title: "Home",
-      icon: "house"
-    },
-    {
-      route: "/about",
-      title: "About",
-      icon: "user"
-    },
-    {
-      route: "/projects",
-      title: "Projects",
-      icon: "star-sharp"
-    }
-  ], 
+  components: { MenuDice },
   methods: {
-    iconStyle (path) {
-      let style = "far"
-      
+    iconStyle(path) {
+      let style = "far";
       if (this.$route.path === path) {
-        style = "fas"
+        style = "fas";
       }
-      return style
+      return style;
     }
   }
 }
@@ -80,12 +66,12 @@ export default {
       margin-left: 12px;
       transition: all 0.1s;
     }
-    &:nth-of-type(2) {
-      margin-right: 50px;
-    }
-    &:nth-of-type(3) {
-      margin-left: 50px;
-    }
+    // &:nth-of-type(2) {
+    //   margin-right: 50px;
+    // }
+    // &:nth-of-type(3) {
+    //   margin-left: 50px;
+    // }
     &:hover {
       cursor: pointer;
       svg {
