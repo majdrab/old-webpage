@@ -1,38 +1,24 @@
-// Slide Left
-.slide-left-enter-active, .slide-left-leave-active {
-   transition: all 0.2s !important;
-   transition-timing-function: ease-in-out !important;
+// Fade
+.fade-enter-active {
+  animation: fadeIn 0.3s;
 }
-.slide-left-enter {
-   opacity: 0;
-   transform: translateX(10%) !important;
+.fade-leave-active {
+  animation: fadeOut 0.3s;
 }
 
-.slide-left-leave-to  {
-   opacity: 0;
-   transform: translateX(-10%) !important;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-// Slide Right
-.slide-right-enter-active, .slide-right-leave-active {
-   transition: all 0.2s !important;
-   transition-timing-function: ease-in-out !important;
-}
-.slide-right-enter {
-   opacity: 0;
-   transform: translateX(-10%) !important;
-}
-
-.slide-right-leave-to {
-   opacity: 0;
-   transform: translateX(10%) !important;
-}
-
-// Route fade
-.route-fade-enter-active, .route-fade-leave-active {
-   transition: all 0.2s !important;
-   transition-timing-function: ease !important;
-}
-.route-fade-enter, .route-fade-leave-to {
-   opacity: 0;
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
