@@ -12,6 +12,8 @@ export default {
 
 <style lang="scss">
 .dnd {
+  width: 100vw;
+  padding: 50px 0 30px;
   flex-grow: 1;
   background: $lPrimary;
   .maj-title {

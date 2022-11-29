@@ -100,9 +100,9 @@ export default {
 <style lang="scss">
 .about {
   width: 100vw;
-  // height: calc(100vh - 70px);
+  padding: 50px 30px 30px;
   // flex-grow: 1;
-  padding: 30px;
+  // padding: 30px;
   gap: 40px;
   position: relative;
   &__section {
@@ -125,6 +125,11 @@ export default {
       .maj-paragraph {
         color: $darkEr;
         text-align: justify;
+        // text-justify: distribute;
+        // text-align-last: left;
+        // word-break: break-all;
+        // overflow-wrap: break-word;
+        hyphens: auto;
       }
       .maj-icon {
         color: $darkIsh;

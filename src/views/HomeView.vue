@@ -30,6 +30,7 @@ export default {
 <style lang="scss">
 .home {
   width: 100vw;
+  padding: 50px 0 30px;
   flex-grow: 1;
   background: $beige;
   &__container {
