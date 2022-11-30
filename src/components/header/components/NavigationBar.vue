@@ -1,7 +1,7 @@
 <template>
     <nav class="navigation">
         <router-link title="Home" to="/">
-            <MajIcon :icon="[iconStyle('/projects'), 'house']"/>
+            <MajIcon :icon="[iconStyle('/'), 'house']"/>
             <span>Home</span> 
         </router-link>
         <router-link title="About" to="/about">
