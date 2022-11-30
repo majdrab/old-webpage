@@ -25,18 +25,24 @@ export default {
     height: 80px;
     position: fixed;
     top: -20px;
-    background: no-repeat url('./images/bg/d20.svg');
+    background: no-repeat url('./images/bg/d20-green.svg');
     background-size: 80px 80px;
     opacity: 0.7;
     transition: all 0.3s;
+    // transform: rotate(30deg);
     &-icon {
       color: $primary;
       font-size: 1.3rem;
+      transition: all 0.3s;
     }
 
     &:hover {
       opacity: 1;
-      transform: translateY(30px) scale(1.2);
+      transform: translateY(30px) scale(1.2) rotate(60deg);
+      
+      .menu-dice__base-icon {
+        transform: rotate(-60deg);
+      }
     }
   }
 }
