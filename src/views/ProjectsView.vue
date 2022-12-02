@@ -1,29 +1,25 @@
 <template>
-    <MajContainer class="projects">
-        <SingleProject
-            v-for="(project, index) in projects"
-            :key="index"
+    <MajContainer centerY class="projects">
+        <ProjectThumbnail
+            v-for="project in projects"
+            :key="project.id"
             :project="project"
         />
     </MajContainer>
 </template>
 
 <script>
-import SingleProject from "@/components/SingleProject.vue"
+import ProjectThumbnail from "@/components/ProjectThumbnail.vue"
 import projectsData from "@/data/projectsData.json"
 
 export default {
   name: "ProjectsView",
-  components: { SingleProject },
+  components: { ProjectThumbnail },
   data() {
     return {
       projects: projectsData
     }
   }
-  // computed: {
-  // },
-  // methods: {
-  // }
 }
 </script>
 
@@ -34,8 +30,6 @@ export default {
   flex-grow: 1;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 30px;
-  align-content: flex-start;
-  overflow-y: auto;
+  background: $lavender;
 }
 </style>
