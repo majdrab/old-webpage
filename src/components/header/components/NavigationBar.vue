@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import MenuDice from "../../MenuDice.vue";
+import MenuDice from "./MenuDice.vue";
 
 export default {
   name: "NavigationBar",
