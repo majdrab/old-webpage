@@ -19,19 +19,36 @@ $lightIsh: #9EA0A5;
 $lightEr: #CECFD2;
 $light: #F1EDFF;
 
-// main colors
+// Main colors
 $primary: #151736;
 $secondary: #00C894;
 $lPrimary: #434165;
 
-//Generic
+// Generic
 $purple: #5B2E58;
 $purpleRed: #A44A65;
 $orangeDark: #DE7561;
 $orange: #FDB25B;
 $yellow: #F9F871;
 
-//Other
+// Other
 $beige: #FFFADE;
 $beigeEr: #E8D5B5;
 $lavender: #BFBBE5;
+
+// Tech icons
+$vuejs: #41B883;
+$github: #171515;
+$sass: #cc6699;
+$square-js: #f0db4f;
+$css3-alt: #264de4;
+$html5:  #e34c26;
+
+$techIcons: (
+  vuejs: $vuejs,
+  github: $github,
+  sass: $sass,
+  square-js: $square-js,
+  css3-alt: $css3-alt,
+  html5:  $html5
+);
