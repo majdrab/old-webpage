@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import ProjectThumbnail from "@/components/ProjectThumbnail.vue"
+import ProjectThumbnail from "@/components/projects/ProjectThumbnail.vue"
 import projectsData from "@/data/projectsData.json"
 
 export default {
