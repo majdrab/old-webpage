@@ -67,7 +67,11 @@ export default {
   }
   &:hover {
     .project-thumbnail-svg__secondary {
-      opacity: 1;
+      opacity: 0.3;
+      transform: translateY(0px);
+    }
+    .project-thumbnail-svg__light-secondary {
+      opacity: 0.6;
       transform: translateY(0px);
     }
   }
