@@ -4,7 +4,7 @@
             <MajDrabLogo class="home__container-logo" />
             <MajContainer vertical class="home__container-description">
                 <MajTitle is="h4">I'm a junior front-end web developer and designer. Welcome to my portfolio website!</MajTitle>
-                <MajTitle is="h4">The website is still a work in progress.</MajTitle>
+                <MajTitle is="h4">The website is still a work in progress. I hope you'll still enjoy it!</MajTitle>
             </MajContainer>
         </MajContainer>
     </MajContainer>
@@ -32,25 +32,32 @@ export default {
   width: 100vw;
   padding: 50px 0 30px;
   flex-grow: 1;
-  background: $beige;
   &__container {
     max-width: 700px;
+    gap: 20px;
     &-logo {
-      min-width: 200px;
       flex: 1 1 0px;
     }
     &-description {
-      margin-left: 20px;
       flex: 1 1 0px;
       background: $lavender;
+      // border: 4px solid $primary;
       border-radius: 10px;
       padding: 20px;
+      opacity: 0;
+      animation: home-appear 1s ease forwards 3.8s;
       .maj-title {
-        color: $light;
+        color: $primary;
         text-align: justify;
+        hyphens: auto;
 
         &:first-of-type {
           margin-bottom: auto;
+        }
+      }
+      @keyframes home-appear {
+        to {
+          opacity: 1;
         }
       }
     }
