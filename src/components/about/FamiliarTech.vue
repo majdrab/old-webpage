@@ -23,10 +23,11 @@ export default {
   .familiar-tech__icon {
     color: $lPrimary;
     font-size: 4rem;
-    transition: color 0.2s;
+    transition: all 0.2s;
     @each $name, $color in $techIcons {
       &#{"-" + $name}:hover {
         color: $color;
+        scale: 1.05;
       }
     }
   }

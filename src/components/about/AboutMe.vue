@@ -1,21 +1,27 @@
 <template>
-    <MajContainer class="about-me">
-        <MajContainer class="about-me__side">
-            <img class="about-me__image" :src="getImage" alt="My pictures" @click="nextImage()">
+    <MajContainer centerY class="about-me">
+        <MajContainer centerX centerY class="about-me__side">
+            <div class="about-me__image-wrapper">
+                <img class="about-me__image" :src="getImage" alt="My pictures" @click="nextImage()">
+            </div>
+            
         </MajContainer>
-        <MajContainer vertical class="about-me__side">
+        <MajContainer centerY vertical class="about-me__side">
             <MajTitle is="h4">
                 About Me.
             </MajTitle>
             <MajParagraph>
-                I'm Maj Drab, a 28-year-old Slovenian junior Front-end developer. Currently in the process of gaining more programming knowledge and doing all kinds of projects.
+                I'm Maj Drab, a 28-year-old Slovenian <span>junior Front-end developer</span>. Currently in the process of gaining more programming knowledge and doing all kinds of projects.
             </MajParagraph>
             <MajParagraph>
-                I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
-                When not working or futzing around with code, I like to play D&D, video/board games, or go for a walk in the woods.
+                I like to <span>resolve</span> design problems, <span>create</span> smart user interface and <span>imagine</span> useful interaction, developing <span>rich web experiences</span> & <span>web applications</span>.
+                
             </MajParagraph>
             <MajParagraph>
-                I'm actively looking for a job.
+                When not working or futzing around with code, I like to play D&D, video and board games, or go for a walk in the woods.
+            </MajParagraph>
+            <MajParagraph>
+                I'm actively <span>looking for a job</span>.
             </MajParagraph>
         </MajContainer>
     </MajContainer>
@@ -56,30 +62,39 @@ export default {
 .about-me {
   width: 100vw;
   padding: 70px 40px 30px;
-  background: $lavender;
+  background: $light;
   gap: 20px;
   &__side {
     flex: 1 1 0px;
     gap: 20px;
+    max-width: 500px;
+    .about-me__image-wrapper {
+      max-width: 405px;
+      background-color: $primary;
+      aspect-ratio: 1/1;
+      padding: 5px;
+      border-radius: 50%;
+      // object-fit: cover;
+      // object-position: 50% 50%;
+      // border-radius: 50%;
+    }
     .about-me__image {
       width: 100%;
       aspect-ratio: 1/1;
       object-fit: cover;
       object-position: 50% 50%;
       border-radius: 50%;
+      cursor: pointer;
     }
     .maj-paragraph {
       color: $darkEr;
       text-align: justify;
-      // text-justify: distribute;
-      // text-align-last: left;
-      // word-break: break-all;
-      // overflow-wrap: break-word;
       hyphens: auto;
-    }
-    .maj-icon {
-      color: $darkIsh;
-      font-size: 4rem;
+
+      span {
+        color: $secondary;
+        font-weight: 500;
+      }
     }
   }
 }
