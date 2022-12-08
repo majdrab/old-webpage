@@ -45,6 +45,7 @@ export default {
   height: 50px;
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 5px;
   gap: 20px;
   
   a {
