@@ -1,5 +1,5 @@
 <template>
-    <MajContainer vertical class="footer">
+    <MajContainer vertical class="footer-content">
         <MajContainer centerY class="footer__section">
             <a
                 v-for="(contact, index) in $options.contact_links"
@@ -45,9 +45,9 @@ export default {
 </script>
 
 <style lang="scss">
-.footer {
-  // display: flex;
-  height: 100px;
+.footer-content {
+  display: none;
+  // height: 100px;
   width: 100vw;
   // flex-direction: column;
   // z-index: 2;
