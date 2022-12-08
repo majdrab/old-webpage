@@ -1,4 +1,5 @@
 <template>
+    <SiteEnvironment />
     <SiteHeader />
     <router-view v-slot="{Component}">
         <transition name="fade" mode="out-in">
@@ -11,11 +12,12 @@
 <script>
 import { RouterLink, RouterView } from "vue-router"
 
-import SiteHeader from "./components/header/SiteHeader.vue";
-import SiteFooter from "./components/footer/SiteFooter.vue";
+import SiteHeader from "./components/SiteHeader.vue";
+import SiteFooter from "./components/SiteFooter.vue";
+import SiteEnvironment from "./components/SiteEnvironment.vue";
 
 export default {
-  components: { SiteHeader, SiteFooter },
+  components: { SiteHeader, SiteFooter, SiteEnvironment },
 }
 </script>
 
