@@ -10,6 +10,8 @@ import MajDivider from "./components/Maj-Kit/MajDivider.vue"
 import MajTitle from "./components/Maj-Kit/MajTitle.vue"
 import MajParagraph from "./components/Maj-Kit/MajParagraph.vue"
 
+import ContactLinks from "./components/footer/ContactLinks.vue";
+
 const app = createApp(App)
 
 app.use(router)
@@ -20,5 +22,6 @@ app
   .component("MajDivider", MajDivider)
   .component("MajTitle", MajTitle)
   .component("MajParagraph", MajParagraph)
+  .component("ContactLinks", ContactLinks)
 
 app.mount("#app")
