@@ -13,7 +13,7 @@ export default {
 <style lang="scss">
 .bot-svg {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 0; 
   width: 1920px;
   z-index: 1;
