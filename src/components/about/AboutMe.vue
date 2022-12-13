@@ -21,7 +21,13 @@
                 When not working or futzing around with code, I like to play D&D, video and board games, or go for a walk in the woods.
             </MajParagraph>
             <MajParagraph>
-                I'm actively <span>looking for a job</span>.
+                I'm actively <span>looking for a job</span> <MajIcon icon="arrow-right" /> 
+                <a 
+                    class="about-me__cv"
+                    target="_blank"
+                    href="../../../public/DrabMajCV.pdf"
+                >Check out my CV
+                </a>
             </MajParagraph>
         </MajContainer>
     </MajContainer>
@@ -62,7 +68,6 @@ export default {
 .about-me {
   width: 100vw;
   padding: 70px 40px 30px;
-  background: $light;
   gap: 20px;
   &__side {
     flex: 1 1 0px;
@@ -74,9 +79,6 @@ export default {
       aspect-ratio: 1/1;
       padding: 5px;
       border-radius: 50%;
-      // object-fit: cover;
-      // object-position: 50% 50%;
-      // border-radius: 50%;
     }
     .about-me__image {
       width: 100%;
@@ -95,7 +97,28 @@ export default {
         color: $secondary;
         font-weight: 500;
       }
+      .about-me__cv {
+        background: $secondary;
+        color: $light;
+        padding: 7px;
+        margin-left: 7px;
+        border: 1px solid $secondary;
+        border-radius: 4px;
+        transition: all 0.3s;
+        // z-index: 30;
+
+        &:hover {
+          background: $light;
+          color: $darkEr;
+          cursor: pointer;
+        }
+      }
     }
+  }
+  @media screen and ($mediaL) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px;
   }
 }
 </style>
