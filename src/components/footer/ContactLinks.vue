@@ -39,16 +39,15 @@ export default {
 <style lang="scss">
 .contact-links {
   gap: 20px;
-  position: absolute;
-  z-index: 2;
+  z-index: 1;
   &__contact {
-    color: $lPrimary;
+    color: $secondary;
     font-size: 2rem;
     transition: all 0.2s;
     
     &:hover {
       cursor: pointer;
-      color: $secondary;
+      color: $light;
       scale: 1.05;
     }
   }
