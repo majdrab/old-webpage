@@ -105,7 +105,6 @@ export default {
         border: 1px solid $secondary;
         border-radius: 4px;
         transition: all 0.3s;
-        // z-index: 30;
 
         &:hover {
           background: $light;
