@@ -1,7 +1,8 @@
 // Media queries
-$mediaMobile: "screen and (max-width: 768px)";
-$mediaTablet: "screen and (max-width: 1024px)";
-$mediaDesktopSmall: "screen and (max-width: 1366px)";
+$mediaXS: "max-width: 480px";
+$mediaS: "max-width: 768px";
+$mediaM: "max-width: 992px";
+$mediaL: "max-width: 1279px";
 $fontFamily: 'Quicksand', sans-serif;
 $fontWeight: 400;
 
@@ -9,7 +10,6 @@ $fontWeight: 400;
 
 $boxShadow: 3px 3px 3px 0 rgb(0 0 0 / 10%);
 $borderRadius: 10px;
-$navColor: rgb(249,252,255);
 
 // Grayscale colors
 $dark: #202020;
