@@ -30,7 +30,7 @@ export default {
   .contact-links {
     padding-bottom: 5px;
     display: none;
-    @media screen and ($mediaS) {
+    @media screen and ($mediaM) {
       display: flex;
     }
   }

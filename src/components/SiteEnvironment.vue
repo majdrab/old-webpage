@@ -33,7 +33,7 @@ export default {
     transform: translateY(-50%);
     flex-direction: column;
     
-    @media screen and ($mediaS) {
+    @media screen and ($mediaM) {
       display: none;
     }
   }
