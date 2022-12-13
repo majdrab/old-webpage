@@ -15,7 +15,6 @@ export default {
 .top-svg {
   position: absolute;
   top: 69px;
-  // left: 0; 
   min-width: 1920px;
   z-index: 1;
 

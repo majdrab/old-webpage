@@ -21,5 +21,11 @@ export default {
   &__1 {
     fill: $primary;
   }
+  @media screen and ($mediaM) {
+    right: -80px;
+  }
+  @media screen and ($mediaS) {
+    display: none;
+  }
 }
 </style>

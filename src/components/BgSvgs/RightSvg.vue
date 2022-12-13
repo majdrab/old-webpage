@@ -22,5 +22,8 @@ export default {
   &__1 {
     fill: $primary;
   }
+  @media screen and ($mediaM) {
+    display: none;
+  }
 }
 </style>

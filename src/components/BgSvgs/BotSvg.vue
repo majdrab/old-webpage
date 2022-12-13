@@ -13,10 +13,11 @@ export default {
 <style lang="scss">
 .bot-svg {
   position: absolute;
-  bottom: 15px;
-  left: 0; 
-  width: 1920px;
-  z-index: 1;
+  top: -25px;
+  left: 50%; 
+  transform: translateX(-50%);
+  min-width: 1920px;
+  z-index: 0;
 
   &__1 {
     fill: $primary;

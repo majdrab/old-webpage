@@ -13,13 +13,19 @@ export default {
 <style lang="scss">
 .bot-right-svg {
   position: absolute;
-  bottom: 0;
+  top: -140px;
   right: 0; 
   width: 250px;
   z-index: 1;
 
   &__1 {
     fill: $primary;
+  }
+  @media screen and ($mediaM) {
+    right: -100px;
+  }
+  @media screen and ($mediaS) {
+    display: none;
   }
 }
 </style>
