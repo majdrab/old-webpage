@@ -32,6 +32,10 @@ export default {
     top: 50%;
     transform: translateY(-50%);
     flex-direction: column;
+    
+    @media screen and ($mediaS) {
+      display: none;
+    }
   }
 }
 </style>
