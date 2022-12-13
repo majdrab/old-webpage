@@ -23,4 +23,16 @@ export default {
 
 <style lang="scss">
 @import '@/styles/index.scss';
+@media screen and ($mediaL) {
+
+}
+@media screen and ($mediaM) {
+
+}
+@media screen and ($mediaS) {
+  
+}
+@media screen and ($mediaXS) {
+
+}
 </style>
