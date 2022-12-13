@@ -4,7 +4,7 @@
         <TopRightSvg />
         <LeftSvg />
         <RightSvg />
-        
+        <ContactLinks />
     </div>
 </template>
 
@@ -26,5 +26,12 @@ export default {
   height: 100vh;
   width: 100vw;
   position: absolute;
+  .contact-links {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+  }
 }
 </style>
