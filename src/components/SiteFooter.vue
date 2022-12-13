@@ -24,24 +24,19 @@ export default {
 <style lang="scss">
 .footer {
   width: 100vw;
-  height: 15px;
   position: relative;
   background: $primary;
 
   .contact-links {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
+    padding-bottom: 5px;
     display: none;
+    @media screen and ($mediaS) {
+      display: flex;
+    }
   }
   &__rights {
-    position: absolute;
     color: $light;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    bottom: 5px;
+    padding-bottom: 10px;
     font-weight: 300;
     text-align: center;
   }
