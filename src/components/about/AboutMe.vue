@@ -88,8 +88,11 @@ export default {
       border-radius: 50%;
       cursor: pointer;
     }
+    .maj-title {
+      color: $primary;
+    }
     .maj-paragraph {
-      color: $darkEr;
+      color: $primary;
       text-align: justify;
       hyphens: auto;
 
