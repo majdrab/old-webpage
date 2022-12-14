@@ -1,5 +1,5 @@
 <template>
-    <p class="maj-paragraph" :style="{'margin-top: 20px;' : margin}" >
+    <p class="maj-paragraph" :style="[`font-size: ${size}rem; line-height: ${size * 1.2}rem;`, {'margin-top: 20px;' : margin}]" >
         <slot></slot>
     </p>
 </template>
@@ -8,15 +8,14 @@
 export default {
   name: "MajParagraph",
   props: {
-    margin: { type: Boolean, default: false }
+    margin: { type: Boolean, default: false },
+    size: { type: Number, default: 1.1 }
   }
 }
 </script>
 
 <style lang="scss">
-p.maj-paragraph {
-  font-size: 1.1rem;
-  line-height: 1.25rem;
+.maj-paragraph {
   font-weight: 400;
 }
 </style>
