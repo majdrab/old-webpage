@@ -67,12 +67,6 @@ export default {
       margin-left: 12px;
       transition: all 0.1s;
     }
-    // &:nth-of-type(2) {
-    //   margin-right: 50px;
-    // }
-    // &:nth-of-type(3) {
-    //   margin-left: 50px;
-    // }
     &:hover {
       cursor: pointer;
       svg {
@@ -97,6 +91,9 @@ export default {
       span {
         color: $light;
       }
+    }
+    @media screen and ($mediaS) {
+      display: none;
     }
   }
 }
