@@ -1,10 +1,12 @@
 <template>
     <MajContainer centerY class="projects">
-        <ProjectThumbnail
-            v-for="project in projects"
-            :key="project.id"
-            :project="project"
-        />
+        <MajContainer class="projects__container">
+            <ProjectThumbnail
+                v-for="project in projects"
+                :key="project.id"
+                :project="project"
+            />
+        </MajContainer>
     </MajContainer>
 </template>
 
@@ -26,10 +28,18 @@ export default {
 <style lang="scss">
 .projects {
   width: 100vw;
-  padding: 50px 0 30px;
+  padding: 70px 0 30px;
   flex-grow: 1;
-  flex-wrap: wrap;
-  gap: 20px;
   background: $lavender;
+  &__container {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-content: flex-start;
+    @media screen and ($mediaL) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 </style>
