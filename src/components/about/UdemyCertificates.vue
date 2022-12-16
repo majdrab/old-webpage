@@ -1,7 +1,7 @@
 <template>
     <MajContainer centerY class="udemy-certificates">
         <MajContainer vertical class="udemy-certificates__container">
-            <MajTitle is="h4" class="udemy-certificates__title">
+            <MajTitle is="h3" class="udemy-certificates__title">
                 My Udemy Certificates
             </MajTitle>
             <div class="udemy-certificates__display">
@@ -34,27 +34,30 @@ export default {
 <style lang="scss">
 .udemy-certificates {
   width: 100vw;
-  padding: 30px 40px 50px;
-  background: $lavender;
+  padding: 30px 0 100px;
+  // background: $lavender;
   &__container {
     max-width: 1000px;
     gap: 20px;
+    @media screen and ($mediaL) {
+      max-width: 500px;
+    }
   }
   &__title {
-    color: $dark;
+    color: $primary;
     padding-bottom: 7px;
-    border-bottom: 2px solid $lPrimary;
+    border-bottom: 2px solid $primary;
   }
   &__display {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // flex-wrap: wrap;
     gap: 20px;
-    // align-content: flex-start;
-    
+    @media screen and ($mediaL) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__certificate {
-    max-width: 450px;
+    // max-width: 450px;
     aspect-ratio: 1600/1190;
     overflow: hidden;
     // box-shadow: $boxShadow;
