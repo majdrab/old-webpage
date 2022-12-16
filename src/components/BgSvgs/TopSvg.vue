@@ -14,7 +14,7 @@ export default {
 <style lang="scss">
 .top-svg {
   position: absolute;
-  top: 69px;
+  bottom: -74px;
   min-width: 1920px;
   z-index: 1;
 
