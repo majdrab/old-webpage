@@ -6,23 +6,22 @@
                 :src="project.image"
                 alt="Project preview image"
             >
-            <ProjectThumbnailSvg 
-                :id="project.id"
-            />
+            <ThumbnailSvg />
         </MajContainer>
         <MajContainer centerX class="project-thumbnail__bottom">
+            
             <MajTitle is="h3" class="project-thumbnail__bottom-name">{{ project.name }}</MajTitle>
         </MajContainer>
     </button>
 </template>
 
 <script>
-import ProjectThumbnailSvg from "./ProjectThumbnailSvg.vue";
+import ThumbnailSvg from "./ThumbnailSvg.vue";
 
 
 export default {
   name: "ProjectThumbnail",
-  components: { ProjectThumbnailSvg },
+  components: { ThumbnailSvg },
   props: {
     project: { type: Object, default: () => {} }
   }
@@ -38,6 +37,7 @@ export default {
   cursor: pointer;
   overflow: hidden;
   background: $primary;
+  z-index: 2;
 
   &__top {
     width: 100%;
@@ -66,13 +66,14 @@ export default {
     }
   }
   &:hover {
-    .project-thumbnail-svg__secondary {
-      opacity: 0.3;
-      transform: translateY(0px);
+    .thumbnail-1-svg {
+      opacity: 1;
+      bottom: 0;
     }
-    .project-thumbnail-svg__light-secondary {
-      opacity: 0.6;
-      transform: translateY(0px);
+    .thumbnail-2-svg {
+      opacity: 1;
+      bottom: 0;
+      transition-delay: 0.1s;
     }
   }
 }
