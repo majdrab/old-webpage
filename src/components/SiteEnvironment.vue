@@ -1,7 +1,9 @@
 <template>
     <div class="environment">
         <TopLeftSvg />
+        <OwlSvg />
         <TopRightSvg />
+        <CatSvg />
         <LeftSvg />
         <RightSvg />
         <ContactLinks />
@@ -13,11 +15,13 @@ import TopLeftSvg from "./BgSvgs/TopLeftSvg.vue";
 import TopRightSvg from "./BgSvgs/TopRightSvg.vue";
 import LeftSvg from "./BgSvgs/LeftSvg.vue";
 import RightSvg from "./BgSvgs/RightSvg.vue";
+import OwlSvg from "./BgSvgs/DetailSvgs/OwlSvg.vue";
+import CatSvg from "./BgSvgs/DetailSvgs/CatSvg.vue";
 
 
 export default {
   name: "SiteEnvironment",
-  components: { TopLeftSvg, TopRightSvg, LeftSvg, RightSvg },
+  components: { TopLeftSvg, TopRightSvg, LeftSvg, RightSvg, OwlSvg, CatSvg },
 }
 </script>
 

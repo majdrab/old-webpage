@@ -17,7 +17,7 @@ export default {
   left: 50%; 
   transform: translateX(-50%);
   min-width: 1920px;
-  z-index: 0;
+  z-index: 3;
 
   &__1 {
     fill: $primary;

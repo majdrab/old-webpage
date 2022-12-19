@@ -1,7 +1,9 @@
 <template>
     <footer class="footer">
         <BotLeftSvg />
+        <ShroomsLeft />
         <BotRightSvg />
+        <ShroomsRight />
         <BotSvg />
         <ContactLinks />
         <MajParagraph class="footer__rights">
@@ -14,10 +16,12 @@
 import BotLeftSvg from "./BgSvgs/BotLeftSvg.vue";
 import BotRightSvg from "./BgSvgs/BotRightSvg.vue";
 import BotSvg from "./BgSvgs/BotSvg.vue";
+import ShroomsLeft from "./BgSvgs/DetailSvgs/ShroomsLeft.vue";
+import ShroomsRight from "./BgSvgs/DetailSvgs/ShroomsRight.vue";
 
 export default {
   name: "SiteFooter",
-  components: { BotLeftSvg, BotRightSvg, BotSvg },
+  components: { BotLeftSvg, BotRightSvg, BotSvg, ShroomsLeft, ShroomsRight },
 }
 </script>
 
