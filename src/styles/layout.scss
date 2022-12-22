@@ -12,6 +12,9 @@
   font-size: 100%;
   vertical-align: baseline;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   background: $light;
   height: auto;
@@ -63,4 +66,21 @@ button {
   border: none;
   background: transparent;
   font-family: inherit;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  
+  &-track {
+    background: $primary; 
+  }
+  &-thumb {
+    background: $lavender; 
+
+    &:hover {
+      background: $lightEr;
+    }
+    &:active {
+      background: $light; 
+    }
+  }
 }
