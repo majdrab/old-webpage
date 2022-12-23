@@ -13,30 +13,27 @@
 
 export default {
   name: "HomeView",
-  data() {
-    return {
-    }
-  },
-  computed: {
-  },
-  methods: {
-  }
 }
 </script>
 
 <style lang="scss">
 .home {
   width: 100vw;
-  padding: 60px 0 25px;
+  padding: 70px 20px 35px;
   flex-grow: 1;
   &__container {
-    max-width: 600px;
+    width: 600px;
     gap: 20px;
   }
   .maj-title {
     color: $secondary;
     padding-bottom: 5px;
     border-bottom: 3px solid $secondary;
+    // @media screen and ($mediaXS) {
+    //   font-size: 3rem;
+    //   line-height: 3.6rem;
+    //   font-weight: 500;
+    // }
   }
   &__desc {
     .maj-paragraph {

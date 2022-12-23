@@ -28,7 +28,7 @@ export default {
 <style lang="scss">
 .projects {
   width: 100vw;
-  padding: 70px 0 30px;
+  padding: 70px 100px 30px;
   flex-grow: 1;
   background: $lavender;
   &__container {
@@ -40,6 +40,12 @@ export default {
     @media screen and ($mediaL) {
       grid-template-columns: repeat(2, 1fr);
     }
+    @media screen and ($mediaS) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media screen and ($mediaS) {
+    padding: 70px 0 30px;
   }
 }
 </style>
