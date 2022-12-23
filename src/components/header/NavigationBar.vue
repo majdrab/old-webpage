@@ -92,6 +92,8 @@ export default {
         color: $light;
       }
     }
+  }
+  > a {
     @media screen and ($mediaS) {
       display: none;
     }
