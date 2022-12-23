@@ -54,22 +54,43 @@ export default {
   z-index: 11;
   &__base {
     background: $secondary;
-    padding: 90px 0 10px;
+    width: 150px;
+    padding: 110px 0 10px;
     border-radius: 5px;
     z-index: inherit;
 
     .menu-dropdown__link {
+      background: transparent;
+      transition: background-color 0.2s;
       span {
         color: $primary;
         margin-left: 0;
-        }
+        transition: color 0.2s;
+      }
       &.router-link-active,
       &.router-link-exact-active {
         span {
           color: $light;
         }
+        &:hover {
+          background: transparent;
+        }
+      }
+      &:hover {
+        background: $primary30;
+      }
+      &:active {
+        background: $primary60;
       }
     }
+    @media screen and ($mediaXS) {
+      padding-bottom: 20px;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  @media screen and ($mediaXS) {
+    top: 0;
   }
 }
 </style>
