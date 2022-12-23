@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as s,c,w as t,a as _,d as r}from"./index.b3c87a76.js";const i={name:"DnDView"};function d(p,l,f,u,m,x){const n=e("MajTitle"),a=e("MajContainer");return s(),c(a,{class:"dnd",centerX:"",centerY:""},{default:t(()=>[_(n,{is:"h1"},{default:t(()=>[r("WIP")]),_:1})]),_:1})}const w=o(i,[["render",d]]);export{w as default};
