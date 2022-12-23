@@ -11,7 +11,9 @@
         <MajContainer centerX class="project-thumbnail__bottom">
             
             <MajTitle is="h3" class="project-thumbnail__bottom-name">{{ project.name }}</MajTitle>
+            
         </MajContainer>
+        <div class="project-thumbnail__hover"></div>
     </button>
 </template>
 
@@ -53,7 +55,7 @@ export default {
   }
   &__bottom {
     width: 100%;
-    height: 30%;
+    height: 28%;
     position: relative;
     background: $light;
     padding: 0 50px;
@@ -65,6 +67,11 @@ export default {
       color: $primary;
     }
   }
+  &__hover {
+    height: 2%;
+    background: $light;
+    transition: background 0.3s;
+  }
   &:hover {
     .thumbnail-1-svg {
       opacity: 1;
@@ -74,6 +81,9 @@ export default {
       opacity: 1;
       bottom: 0;
       transition-delay: 0.1s;
+    }
+    .project-thumbnail__hover {
+      background: $secondary;
     }
   }
 }
