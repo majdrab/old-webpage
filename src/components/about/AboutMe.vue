@@ -14,7 +14,7 @@
                 I'm Maj Drab, a 28-year-old Slovenian <span>junior Front-end developer</span>. Currently in the process of gaining more programming knowledge and doing all kinds of projects.
             </MajParagraph>
             <MajParagraph>
-                I like to <span>resolve</span> design problems, <span>create</span> smart user interface and <span>imagine</span> useful interaction, developing <span>rich web experiences</span> & <span>web applications</span>.
+                I like to <span>resollve</span> design problems, <span>create</span> smart user interface and <span>imagine</span> useful interaction, developing <span>rich web experiences</span> & <span>web applications</span>.
                 
             </MajParagraph>
             <MajParagraph>
