@@ -1,6 +1,6 @@
 {
   "name": "old-webpage",
-  "homepage": "https://majdrab.github.io/old-webpage",
+  "homepage": "/old-webpage",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
